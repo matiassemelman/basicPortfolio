@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300&display=swap");
+
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+a {
+  color: var(--magenta);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--hotmag);
+}
+
+/* =============================== NAVBAR ========================================== */
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+ul {
+  font-family: var(--mono);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: var(--white);
+}
+
+ul h1 {
+  font-family: var(--sans);
+}
+
+ul a {
+  text-decoration: none;
+}
+
+/* =============================== HERO ========================================== */
+
+.hero {
+  padding: 4rem 1rem 10rem 1rem;
+  padding-bottom: 10rem;
+  padding-bottom: 10rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero p {
+  line-height: 1.5;
+}
+
+.name {
+  font-family: var(--mono);
+  font-size: 1rem;
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+  font-weight: 300;
+}
+
+.hero h2 {
+  font-size: 4rem;
+}
+
+/* =============================== CONTACT ========================================== */
+
+.contact {
+  background-color: var(--plum);
+}
+
+.contact section {
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.contact p:last-child {
+  margin-top: 4rem;
+}
+
+.button {
+  background-color: var(--magenta);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: var(--mono);
+}
