@@ -51,7 +51,8 @@ a:hover {
 nav {
   font-family: var(--mono);
   font-size: 80%;
-  padding: 1rem;
+
+ 
 }
 
 ul {
@@ -59,7 +60,10 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 8rem ;
 }
 
 ul h1 {
@@ -68,6 +72,14 @@ ul h1 {
 
 ul a {
   text-decoration: none;
+  color: var(--white);
+
+}
+
+ul div {
+  display: flex;
+
+
 }
 
 /* =============================== HERO ========================================== */
