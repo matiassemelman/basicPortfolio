@@ -51,11 +51,9 @@ a:hover {
 nav {
   font-family: var(--mono);
   font-size: 80%;
-
- 
 }
 
-ul {
+nav ul {
   font-family: var(--mono);
   list-style-type: none;
   padding: 0;
@@ -63,23 +61,31 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4rem 8rem ;
+  margin: 4rem 8rem;
 }
 
-ul h1 {
+nav li:first-child {
   font-family: var(--sans);
 }
 
-ul a {
+nav a {
   text-decoration: none;
   color: var(--white);
-
+  display: block;
+  margin-inline: 1rem;
 }
 
-ul div {
+nav ul div {
   display: flex;
+}
 
+nav a:hover {
+  color: var(--magenta);
+}
 
+i {
+  color: var(--aqua);
+  font-size: 1.5rem;
 }
 
 /* =============================== HERO ========================================== */
