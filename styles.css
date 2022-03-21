@@ -64,9 +64,18 @@ nav ul {
   margin: 4rem 8rem;
 }
 
-nav li:first-child {
+.logo {
   font-family: var(--sans);
 }
+
+
+
+.nav__links li:last-child {
+  background-color: var(--magenta);
+  border-radius: 6px;
+}
+
+
 
 nav a {
   text-decoration: none;
@@ -79,14 +88,40 @@ nav ul div {
   display: flex;
 }
 
-nav a:hover {
+nav a:hover,
+nav i:hover {
   color: var(--magenta);
+}
+
+nav a:last-child {
+  padding: .5rem .2rem;
+
+}
+nav a:last-child:hover {
+color: var(--white);
 }
 
 i {
   color: var(--aqua);
-  font-size: 1.5rem;
 }
+
+@media (max-width: 850px) {
+nav ul:first-child{
+  display: block;
+  margin-inline: 10%;
+}
+}
+
+@media (max-width: 630px) {
+  nav > ul:first-child {
+    margin-inline: 2%;
+  }
+  .nav__links > li > a {
+    margin-inline: 1px;
+  }
+  }
+
+
 
 /* =============================== HERO ========================================== */
 
@@ -144,4 +179,23 @@ i {
   border-radius: 5px;
   text-decoration: none;
   font-family: var(--mono);
+}
+
+/* =============================== FOOTER ========================================== */
+
+footer {
+  margin-block: 3em;
+  text-align: center;
+}
+
+footer ul {
+  
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+footer i {
+  color: var(--magenta);
+  margin-inline: .5em;
 }
