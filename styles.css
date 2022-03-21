@@ -143,7 +143,6 @@ nav ul:first-child{
 .hero {
   padding: 4rem 1rem 10rem 1rem;
   padding-bottom: 10rem;
-  padding-bottom: 10rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -168,7 +167,56 @@ nav ul:first-child{
 .hero h2 {
   font-size: 4rem;
 }
+/* =============================== PROJECTS ========================================== */
 
+.projects {
+  padding: 5rem 5rem 9rem 5rem;
+  background-color: var(--dkblue);
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: calc(2.5rem * 1.5)
+}
+
+article {
+  display: flex;
+}
+
+.calculator {
+  min-width: 400px;
+  min-height: 595px;
+}
+.text {
+  text-align: right;
+}
+
+.text h4 {
+  font-size: 1rem;
+font-family: var(--mono);
+margin: 0;
+}
+
+.text h3 {
+  color: var(--aqua)
+}
+
+.text p {
+  background-color: var(--black);
+  margin: 6rem 0;
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: 10px;
+}
+
+.text ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style-type: none;
+  font-size: 1rem;
+  
+}
 /* =============================== CONTACT ========================================== */
 
 .contact {
