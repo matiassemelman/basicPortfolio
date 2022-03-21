@@ -47,6 +47,17 @@ a:hover {
   color: var(--hotmag);
 }
 
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+.gradient {
+  height: .2rem;
+  background: rgb(255,23,228);
+background: linear-gradient(27deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+}
+
 /* =============================== NAVBAR ========================================== */
 nav {
   font-family: var(--mono);
@@ -75,6 +86,10 @@ nav ul {
   border-radius: 6px;
 }
 
+.nav__links li:last-child:hover {
+  background-color: var(--hotmag);
+}
+
 
 
 nav a {
@@ -97,8 +112,8 @@ nav a:last-child {
   padding: .5rem .2rem;
 
 }
-nav a:last-child:hover {
-color: var(--white);
+nav a:hover {
+color: var(--magenta);
 }
 
 i {
