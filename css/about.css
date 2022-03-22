@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300&display=swap");
+
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+a {
+  color: var(--magenta);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--hotmag);
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+.gradient {
+  height: 0.2rem;
+  background: rgb(255, 23, 228);
+  background: linear-gradient(
+    27deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+}
+
+/* =============================== NAVBAR ========================================== */
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+}
+
+nav ul {
+  font-family: var(--mono);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 8rem;
+}
+
+.logo {
+  font-family: var(--sans);
+}
+
+.nav__links li:last-child {
+  background-color: var(--magenta);
+  border-radius: 6px;
+}
+
+.nav__links li:last-child:hover {
+  background-color: var(--hotmag);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  margin-inline: 1rem;
+}
+
+nav ul div {
+  display: flex;
+}
+
+nav a:hover,
+nav i:hover {
+  color: var(--magenta);
+}
+
+nav a:last-child {
+  padding: 0.5rem 0.2rem;
+}
+nav a:hover {
+  color: var(--magenta);
+}
+
+i {
+  color: var(--aqua);
+}
+
+@media (max-width: 850px) {
+  nav ul:first-child {
+    display: block;
+    margin-inline: 10%;
+  }
+}
+
+@media (max-width: 630px) {
+  nav > ul:first-child {
+    margin-inline: 2%;
+  }
+  .nav__links > li > a {
+    margin-inline: 8px;
+  }
+}
+
+/* =============================== ABOUT ========================================== */
+
+.about {
+  display: flex;
+  background-color: var(--dkblue);
+  padding: 2rem;
+}
+
+.about h2 {
+    text-align: center;
+}
+.about img {
+    border-radius: 15%;
+    margin: 2rem 1rem 0 0;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.about p {
+  border-radius: 10px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+@media (max-width: 1120px) {
+    .about {
+        flex-direction: column;
+    }
+    
+
+    .about img {
+        width: 400px;
+        height: auto;
+        padding: 0 auto;
+    }
+   
+}
+
+/* =============================== CONTACT ========================================== */
+
+.contact {
+  background-color: var(--plum);
+}
+
+.contact section {
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.contact p:last-child {
+  margin-top: 4rem;
+}
+
+.button {
+  background-color: var(--magenta);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: var(--mono);
+}
+
+/* =============================== FOOTER ========================================== */
+
+footer {
+  margin-block: 3em;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+footer i {
+  color: var(--magenta);
+  margin-inline: 0.5em;
+}
