@@ -53,9 +53,13 @@ a:hover {
 }
 
 .gradient {
-  height: .2rem;
-  background: rgb(255,23,228);
-background: linear-gradient(27deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+  height: 0.2rem;
+  background: rgb(255, 23, 228);
+  background: linear-gradient(
+    27deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
 }
 
 /* =============================== NAVBAR ========================================== */
@@ -79,8 +83,6 @@ nav ul {
   font-family: var(--sans);
 }
 
-
-
 .nav__links li:last-child {
   background-color: var(--magenta);
   border-radius: 6px;
@@ -89,8 +91,6 @@ nav ul {
 .nav__links li:last-child:hover {
   background-color: var(--hotmag);
 }
-
-
 
 nav a {
   text-decoration: none;
@@ -109,11 +109,10 @@ nav i:hover {
 }
 
 nav a:last-child {
-  padding: .5rem .2rem;
-
+  padding: 0.5rem 0.2rem;
 }
 nav a:hover {
-color: var(--magenta);
+  color: var(--magenta);
 }
 
 i {
@@ -121,10 +120,10 @@ i {
 }
 
 @media (max-width: 850px) {
-nav ul:first-child{
-  display: block;
-  margin-inline: 10%;
-}
+  nav ul:first-child {
+    display: block;
+    margin-inline: 10%;
+  }
 }
 
 @media (max-width: 630px) {
@@ -132,11 +131,9 @@ nav ul:first-child{
     margin-inline: 2%;
   }
   .nav__links > li > a {
-    margin-inline: 1px;
+    margin-inline: 13px;
   }
-  }
-
-
+}
 
 /* =============================== HERO ========================================== */
 
@@ -177,16 +174,30 @@ nav ul:first-child{
 .projects h2 {
   font-size: 2.5rem;
   display: block;
-  margin-bottom: calc(2.5rem * 1.5)
+  margin-bottom: calc(2.5rem * 1.5);
 }
 
 article {
   display: flex;
 }
 
+@media (max-width: 630px) {
+  article {
+    flex-wrap: wrap;
+  }
+
+  .text {
+    margin-top: 2rem;
+  }
+
+  .text > * {
+    text-align: center;
+  }
+}
+
 .calculator {
   min-width: 400px;
-  min-height: 595px;
+  height: 590px;
 }
 .text {
   text-align: right;
@@ -194,12 +205,12 @@ article {
 
 .text h4 {
   font-size: 1rem;
-font-family: var(--mono);
-margin: 0;
+  font-family: var(--mono);
+  margin: 0;
 }
 
 .text h3 {
-  color: var(--aqua)
+  color: var(--aqua);
 }
 
 .text p {
@@ -215,7 +226,12 @@ margin: 0;
   gap: 1rem;
   list-style-type: none;
   font-size: 1rem;
-  
+}
+
+@media (max-width: 630px) {
+  .text ul {
+    justify-content: center;
+  }
 }
 /* =============================== CONTACT ========================================== */
 
@@ -252,7 +268,6 @@ footer {
 }
 
 footer ul {
-  
   display: flex;
   list-style-type: none;
   justify-content: center;
@@ -260,5 +275,5 @@ footer ul {
 
 footer i {
   color: var(--magenta);
-  margin-inline: .5em;
+  margin-inline: 0.5em;
 }
