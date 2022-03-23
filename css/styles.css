@@ -130,8 +130,11 @@ i {
   nav > ul:first-child {
     margin-inline: 2%;
   }
+
+
   .nav__links > li > a {
-    margin-inline: 13px;
+    flex-wrap: wrap;
+    margin-inline: 2px;
   }
 }
 
@@ -287,3 +290,27 @@ footer i {
 }
 
 
+
+/* SOME MOBILE ARRANGEMENTS */
+
+@media (max-width: 630px) {
+  nav ul {
+    margin: 2em 0;
+  }
+  .nav__links {
+    flex-wrap: wrap;
+  }
+  .hero {
+    margin: 0;
+    padding: 0;
+  }
+
+  .projects {
+    margin: .3rem;
+    padding: 0;
+  }
+  .nav__links li:last-child {
+    margin: 1em 100%;
+  }
+  
+}
